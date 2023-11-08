@@ -81,32 +81,32 @@ let noMeaning;
 //  1.  Create 3 functions to convert R1000 into dollars, euros and pounds. Take function naming into consideration!
 
 function convertToDoller(){
-    let dollers = 1000 / 18.41;
+    let dollers = 1000 / 18.47;
     console.log("R1000 converted to USD is " + "$" + dollers);
 }
-console.log(convertToDoller());
+convertToDoller();
 
 function convertToEuro(){
     let euros = 1000 / 19.65;
     console.log("R1000 converted to Euros is " + "€" + euros);
 }
-console.log(convertToEuro());
+convertToEuro();
 
 function convertToPounds(){
     let pounds = 1000 / 22.59;
     console.log("R1000 converted to GBP is " + "£" + pounds);
 }
-console.log(convertToPounds());
+convertToPounds();
 
 //  2.  Create a function that takes a value and calculates the amount entered including VAT (15%), amount entered should be R400.
 //      Then display the message in the console, "The amount after tax is ...".
 
 function calcVAT(){
     let amount = 400;
-    let amountAfterVAT = amount / 15 + amount;
+    let amountAfterVAT = 0.15 * amount + amount;
     console.log("The amount after tax is " + "R" + amountAfterVAT);
 }
-console.log(calcVAT());
+calcVAT();
 
 //  3.  Declare 3 variables 1stNum, 2ndNum, 3rdNum and assign values of 8, 20 and 14 respectfully. Now write a function that compares “1stNum” and “2ndNum” and 
 //      displays the larger value.
@@ -124,7 +124,7 @@ function comparison(){
     }
 }
 console.log("The larger value is: ");
-console.log(comparison());
+comparison();
 
 //  4.  Write a function that determines whether “1stNum” is odd or even and displays the
 //      result. (Tip: remember the modulus operator %)
@@ -133,6 +133,7 @@ function isEven(){
     return stNum % 2 === 0;
 }
 console.log("Is 1stNum an Even number? : " + isEven());
+
 function isOdd(){
     return stNum % 2 !== 0;
 }
@@ -167,4 +168,4 @@ function sortNums(){
     }
 }
 console.log("Three numbers sorted from largest to smallest: ");
-console.log(sortNums());
+sortNums();
