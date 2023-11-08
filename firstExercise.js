@@ -60,10 +60,10 @@ console.log(myself);
 
 // 3. Use the ‘typeof’ function to check each variable
 
-console.log(typeof myself.myName);
-console.log(typeof myself.mySurname);
-console.log(typeof myself.myAge);
-console.log(typeof myself.myHome);
+console.log("The Data Type of the myName variable is a " + typeof myself.myName);
+console.log("The Data Type of the mySurname variable is a " + typeof myself.mySurname);
+console.log("The Data Type of the myAge variable is a " + typeof myself.myAge);
+console.log("The Data Type of the myHome variable is a " + typeof myself.myHome);
 
 // 4. Create an array with numbers and strings. Comment what data type you expect this tobe. Then use the ‘typeof’ function on this array
 
@@ -123,6 +123,7 @@ function comparison(){
         console.log(ndNum);
     }
 }
+console.log("The larger value is: ");
 console.log(comparison());
 
 //  4.  Write a function that determines whether “1stNum” is odd or even and displays the
@@ -165,4 +166,5 @@ function sortNums(){
         }
     }
 }
+console.log("Three numbers sorted from largest to smallest: ");
 console.log(sortNums());
