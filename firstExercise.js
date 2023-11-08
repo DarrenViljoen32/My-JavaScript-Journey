@@ -79,11 +79,90 @@ let noMeaning;
 // ***********C. Task 3. functions and contional statements************
 // N.B. READ WITH UNDERSTANDING!!!
 //  1.  Create 3 functions to convert R1000 into dollars, euros and pounds. Take function naming into consideration!
+
+function convertToDoller(){
+    let dollers = 1000 / 18.41;
+    console.log("R1000 converted to USD is " + "$" + dollers);
+}
+console.log(convertToDoller());
+
+function convertToEuro(){
+    let euros = 1000 / 19.65;
+    console.log("R1000 converted to Euros is " + "€" + euros);
+}
+console.log(convertToEuro());
+
+function convertToPounds(){
+    let pounds = 1000 / 22.59;
+    console.log("R1000 converted to GBP is " + "£" + pounds);
+}
+console.log(convertToPounds());
+
 //  2.  Create a function that takes a value and calculates the amount entered including VAT (15%), amount entered should be R400.
 //      Then display the message in the console, "The amount after tax is ...".
-//  3.  Declare 3 variables 1stNum, 2ndNum, 3rdNum and assign values of 8, 20 and 14 respectfully. Now write a function that compares “num1” and “num2” and 
+
+function calcVAT(){
+    let amount = 400;
+    let amountAfterVAT = amount / 15 + amount;
+    console.log("The amount after tax is " + "R" + amountAfterVAT);
+}
+console.log(calcVAT());
+
+//  3.  Declare 3 variables 1stNum, 2ndNum, 3rdNum and assign values of 8, 20 and 14 respectfully. Now write a function that compares “1stNum” and “2ndNum” and 
 //      displays the larger value.
-//  4.  Write a function that determines whether “num1” is odd or even and displays the
+
+let stNum = 8;
+let ndNum = 20;
+let rdNum = 14;
+
+function comparison(){
+    if(stNum > ndNum){
+        console.log(stNum);
+    }
+    else if(ndNum > stNum){
+        console.log(ndNum);
+    }
+}
+console.log(comparison());
+
+//  4.  Write a function that determines whether “1stNum” is odd or even and displays the
 //      result. (Tip: remember the modulus operator %)
+
+function isEven(){
+    return stNum % 2 === 0;
+}
+console.log("Is 1stNum an Even number? : " + isEven());
+function isOdd(){
+    return stNum % 2 !== 0;
+}
+console.log("Is 1stNum an Odd number? : " + isOdd());
+
 //  5.  Next, write a JavaScript conditional statement to sort the three numbers(1stNum, 2ndNum, 3rdNum) from largest to smallest.
 
+function sortNums(){
+    if(stNum > ndNum && stNum > rdNum){
+        if(ndNum > rdNum){
+            console.log(stNum + ", " + ndNum + ", " + rdNum);
+        }
+        else{
+            console.log(stNum + ", " + rdNumNum + ", " + ndNumNum);
+        }
+    }
+    else if(ndNum > stNum && ndNum > rdNum){
+        if(stNum > rdNum){
+            console.log(ndNum + ", " + stNum + ", " + rdNum);
+        }
+        else{
+            console.log(ndNum + ", " + rdNum + ", " + stNum);
+        }
+    }
+    else if(rdNum > stNum && rdNum > ndNum){
+        if(stNum > ndNum){
+            console.log(rdNum + ", " + stNum + ", " + ndNum);
+        }
+        else{
+            console.log(rdNum + ", " + ndNum + ", " + stNum);
+        }
+    }
+}
+console.log(sortNums());
