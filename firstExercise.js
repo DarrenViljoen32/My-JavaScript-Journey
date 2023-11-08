@@ -42,10 +42,39 @@ console.log("10 / 4 = " + result + " remainder " + remainder);
 
 // B. Task 2:Data Types
 // 1. Define the following data types with your own contents[ 'integer', 'decimal', 'string', 'array'(minimum: 3 items), 'Object'(minimum: 4 values)]
+
+let myInteger = 25;
+let myDecimal = 4.6;
+let myString = "This is my String";
+let myArray = [97, 'Bonnie', 'Clyde', 'Just the two of Us'];
+let myself = {
+    myName : "Darren",
+    mySurname : "Viljoen",
+    myAge : 25,
+    myHome : "Riverton",
+}
+
 // 2. Once you’ve created the variables, display them to the console
+
+console.log(myself);
+
 // 3. Use the ‘typeof’ function to check each variable
+
+console.log(typeof myself.myName);
+console.log(typeof myself.mySurname);
+console.log(typeof myself.myAge);
+console.log(typeof myself.myHome);
+
 // 4. Create an array with numbers and strings. Comment what data type you expect this tobe. Then use the ‘typeof’ function on this array
+
+let myArraySequal = [1, 2, 'Buckle my shoe', 3, 4, 'Knock on the door', 5, 6, 'Pick up sticks'];
+    //I Expect This Data Type To Be An Object Or Perhaps An Array.
+console.log("The Data Type of this Array is " + typeof myArraySequal);
+
 // 5. Create a null variable and an undefined variable
+
+let nothing = null;
+let noMeaning;
 
 // ***********C. Task 3. functions and contional statements************
 // N.B. READ WITH UNDERSTANDING!!!
