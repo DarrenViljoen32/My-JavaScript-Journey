@@ -38,7 +38,7 @@ console.log("The remainder is " + remainder);
 // 4.Using the variables you created in the previous step, output the results
 // of the division in the following format: “num1 / num2 = x remainder y.” HINT: Backticks
 
-console.log("10 / 4 = " + result + " remainder " + remainder);
+console.log("10 / 4 = " + Math.trunc(result) + " remainder " + remainder);
 
 // B. Task 2:Data Types
 // 1. Define the following data types with your own contents[ 'integer', 'decimal', 'string', 'array'(minimum: 3 items), 'Object'(minimum: 4 values)]
@@ -56,6 +56,10 @@ let myself = {
 
 // 2. Once you’ve created the variables, display them to the console
 
+console.log("My Integer: " + myInteger);
+console.log("My Decimal: " + myDecimal);
+console.log("My String: " + myString);
+console.log("My Array: " + myArray);
 console.log(myself);
 
 // 3. Use the ‘typeof’ function to check each variable
