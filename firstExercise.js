@@ -56,10 +56,6 @@ let myself = {
 
 // 2. Once you’ve created the variables, display them to the console
 
-console.log("My Integer: " + myInteger);
-console.log("My Decimal: " + myDecimal);
-console.log("My String: " + myString);
-console.log("My Array: " + myArray);
 console.log(myself);
 
 // 3. Use the ‘typeof’ function to check each variable
@@ -151,7 +147,7 @@ function sortNums(){
             console.log(stNum + ", " + ndNum + ", " + rdNum);
         }
         else{
-            console.log(stNum + ", " + rdNumNum + ", " + ndNumNum);
+            console.log(stNum + ", " + rdNum + ", " + ndNum);
         }
     }
     else if(ndNum > stNum && ndNum > rdNum){
